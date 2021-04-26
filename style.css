@@ -14,15 +14,16 @@ body {
 
 .page {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: 100vh;
 }
 
-.btn {
+.btn1 {
   position: relative;
-  padding: 15px 65px;
+  padding: 15px 25px;
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
@@ -31,7 +32,7 @@ body {
   border-radius: 5px;
 }
 
-.btn::before {
+.btn1::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -43,6 +44,103 @@ body {
   background-position: center;
   animation: slideInLeft linear 0.25s alternate infinite;
 }
+
+.btn2 {
+  position: relative;
+  padding: 15px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: linear-gradient(1800deg, #2999fb 0, #0747e8 100%);
+  border: 1px solid blue;
+  border-radius: 5px;
+}
+
+.btn2::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  width: 40px;
+  height: 40px;
+  background-image: url("arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: slideInLeft ease 0.25s alternate infinite;
+}
+
+.btn3 {
+  position: relative;
+  padding: 15px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: linear-gradient(1800deg, #2999fb 0, #0747e8 100%);
+  border: 1px solid blue;
+  border-radius: 5px;
+}
+
+.btn3::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  width: 40px;
+  height: 40px;
+  background-image: url("arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: slideInLeft ease-in 0.25s alternate infinite;
+}
+
+.btn4 {
+  position: relative;
+  padding: 15px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: linear-gradient(1800deg, #2999fb 0, #0747e8 100%);
+  border: 1px solid blue;
+  border-radius: 5px;
+}
+
+.btn4::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  width: 40px;
+  height: 40px;
+  background-image: url("arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: slideInLeft ease-out 0.25s alternate infinite;
+}
+
+.btn5 {
+  position: relative;
+  padding: 15px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: linear-gradient(1800deg, #2999fb 0, #0747e8 100%);
+  border: 1px solid blue;
+  border-radius: 5px;
+}
+
+.btn5::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  width: 40px;
+  height: 40px;
+  background-image: url("arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: slideInLeft ease-in-out 0.25s alternate infinite;
+}
+
 
 @keyframes slideInLeft {
   from {
