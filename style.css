@@ -1,0 +1,55 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+:before,
+:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.btn {
+  position: relative;
+  padding: 15px 65px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: linear-gradient(1800deg, #2999fb 0, #0747e8 100%);
+  border: 1px solid blue;
+  border-radius: 5px;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  width: 40px;
+  height: 40px;
+  background-image: url("arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: slideInLeft linear 0.25s alternate infinite;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translate3d(-25%, -50%, 0);
+  }
+
+  to {
+    transform: translate3d(0, -50%, 0);
+  }
+}
